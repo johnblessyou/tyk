@@ -23,7 +23,7 @@ type HealthChecker interface {
 }
 
 type HealthCheckValues struct {
-	ThrottledRequestsPS float64 `bson:"throttle_reqests_per_second,omitempty" json:"throttle_reqests_per_second"`
+	ThrottledRequestsPS float64 `bson:"throttle_requests_per_second,omitempty" json:"throttle_requests_per_second"`
 	QuotaViolationsPS   float64 `bson:"quota_violations_per_second,omitempty" json:"quota_violations_per_second"`
 	KeyFailuresPS       float64 `bson:"key_failures_per_second,omitempty" json:"key_failures_per_second"`
 	AvgUpstreamLatency  float64 `bson:"average_upstream_latency,omitempty" json:"average_upstream_latency"`
